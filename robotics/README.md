@@ -33,6 +33,12 @@ This folder documents the bundled 2025 robotics metadata that is now stored in t
 Run from the project root:
 
 ```bash
+./scripts/fetch_robotics_2025_metadata.sh
+```
+
+Or call the Python entry point directly:
+
+```bash
 python ./scripts/fetch_robotics_2025_metadata.py
 ```
 

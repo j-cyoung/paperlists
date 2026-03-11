@@ -33,6 +33,12 @@
 请在项目根目录运行：
 
 ```bash
+./scripts/fetch_robotics_2025_metadata.sh
+```
+
+或者直接调用 Python 入口：
+
+```bash
 python ./scripts/fetch_robotics_2025_metadata.py
 ```
 
