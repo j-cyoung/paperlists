@@ -30,16 +30,14 @@
 
 ## 重新生成
 
-请在项目根目录运行：
+请在项目根目录运行。
+
+统一使用共享抓取入口：
 
 ```bash
-./scripts/fetch_robotics_2025_metadata.sh
-```
-
-或者直接调用 Python 入口：
-
-```bash
-python ./scripts/fetch_robotics_2025_metadata.py
+python ./tools/fetch_paperlist_metadata.py \
+  --venues ijrr icra iros \
+  --years 2025
 ```
 
 脚本会先把生成结果写到 `./store/robotics_2025_metadata_20260311/`，确认无误后再提升到 `./paperlists/...` 中作为正式仓库版本。

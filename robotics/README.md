@@ -30,16 +30,14 @@ This folder documents the bundled 2025 robotics metadata that is now stored in t
 
 ## Regeneration
 
-Run from the project root:
+Run from the project root.
+
+Use the single shared fetch entry point:
 
 ```bash
-./scripts/fetch_robotics_2025_metadata.sh
-```
-
-Or call the Python entry point directly:
-
-```bash
-python ./scripts/fetch_robotics_2025_metadata.py
+python ./tools/fetch_paperlist_metadata.py \
+  --venues ijrr icra iros \
+  --years 2025
 ```
 
 The script first writes generated files under `./store/robotics_2025_metadata_20260311/`, and those reviewed outputs can then be promoted into `./paperlists/...` as needed.
